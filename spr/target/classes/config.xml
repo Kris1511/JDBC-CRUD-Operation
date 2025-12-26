@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<!--  <bean id = "lappy" class="learn.sping.spr.Laptop">
+		<property name="brand" value = "dell" />
+		<property name="price" value = "45000.90" />
+		<property name="color" value = "silver" />
+		
+		/// constructor injection
+		<constructor-arg value = "dell" />
+		<constructor-arg value = "78900.90" />
+		<constructor-arg value = "White" />  -->
+		
+		<!-- 	/// setter injection
+		property name="brand" value = "dell"></property>
+		<property name="price" value = "45000.90"></property>
+		<property name="color" value = "silver"></property> 
+	</bean> -->
+	
+	<!-- 
+	<bean id = "mother" class = "learn.sping.spr.MotherBoard">
+		<property name="model" value = "Levnovo G15" />
+		<property name="brand" value = "Lenovo" />
+		<property name="os" value = "Windows" />
+	</bean>
+	 -->
+	 
+	 <bean id = "person" class = "learn.sping.spr.Person">
+	 	<property name="name" value = "Ramu" />
+	 	<property name="contacts" >
+	 		<set>
+	 			<value>+91 8439938202</value>
+	 			<value>+91 9083738292</value>
+	 		</set>
+	 	</property>
+	 	<property name="bike"> 
+	 		<list>
+	 			<value>Apache</value>
+	 			<value>RX100</value>
+	 			<value>Harley Davidson</value>
+	 		</list>
+	 	</property>
+	 	<property name="siblings" > 
+	 		<map>
+	 			<entry key = "1" value = "Chandru" />
+	 			<entry key = "2" value = "Sharmi" />
+	 			<entry key = "3" value = "Viji" />
+	 		</map>
+	 	</property>
+	 </bean>
+</beans>
