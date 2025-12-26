@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id = "user" class = "learn.sping.spr1.User">
+		<property name="profile" ref = "profile" />
+	</bean>
+	
+	<bean id = "profile" class = "learn.sping.spr1.Profile">
+		<property name="name" value = "Arun" />
+		<property name="dob" value = "10-12-2003" />
+		<property name="address">
+			<list>
+				<value>Namakkal</value>
+				<value>Chennai</value>
+				<value>Coimbatore</value>
+			</list>
+		</property>
+		<property name="documents">
+			<map>
+				<entry key = "1111" value = "Aadhar" />
+				<entry key = "2392" value = "PAN" />
+			</map>
+		</property>
+	</bean>
+	
+	
+</beans>
