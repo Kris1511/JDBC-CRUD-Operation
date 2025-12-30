@@ -14,10 +14,22 @@ public class CalciController {
 						@RequestParam String operation, 
 						Model m) {
 		System.out.println("request received");
-		switch(operation) {
-//		case 1:
-			
+		
+		int result = 0;
+		
+		if (operation.equals("add")) {
+			result = num1 + num2;
+		} else if (operation.equals("sub")) {
+			result = num1 - num2;
+		} else if (operation.equals("mul")) {
+			result = num1 * num2;
+		} else if (operation.equals("div")) {
+			result = num1 / num2;
+		} else {
+			System.out.println("Invalid operation");
 		}
+		
+		m.addAttribute("result", result);	
 		return "result";
 	}
 
