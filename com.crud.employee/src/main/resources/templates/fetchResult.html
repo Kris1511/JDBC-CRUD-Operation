@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h2>All Employees</h2>
+<div th:each="emp : ${fetch}">
+    <h4 th:text="${emp.id}"></h4>
+    <h4 th:text="${emp.name}"></h4>
+    <h4 th:text="${emp.team}"></h4>
+    <h4 th:text="${emp.salary}"></h4>
+    <hr>
+</div>
+</body>
+</html>
