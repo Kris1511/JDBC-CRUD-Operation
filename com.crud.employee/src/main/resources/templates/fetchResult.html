@@ -6,12 +6,23 @@
 </head>
 <body>
 <h2>All Employees</h2>
-<div th:each="emp : ${fetch}">
-    <h4 th:text="${emp.id}"></h4>
-    <h4 th:text="${emp.name}"></h4>
-    <h4 th:text="${emp.team}"></h4>
-    <h4 th:text="${emp.salary}"></h4>
-    <hr>
-</div>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Team</th>
+				<th>Salary</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="emp : ${fetch}">
+    				<td th:text="${emp.id}"></td>
+    				<td th:text="${emp.name}"></td>
+    				<td th:text="${emp.team}"></td>
+    				<td th:text="${emp.salary}"></td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>

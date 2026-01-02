@@ -71,11 +71,6 @@ public class EmployeeController {
 	
 	// fetch all employee
 	@GetMapping("/fetchEmp")
-	public String fetchEmployee() {
-		return "fetchEmployee";
-	}
-	
-	@PostMapping("/fetchEmployee")
 	public String fetchEmp(Model m) {
 		List<Employee> empList = service.fetchEmployee();
 		m.addAttribute("fetch", empList);
