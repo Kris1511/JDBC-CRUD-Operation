@@ -1,0 +1,100 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #bfa0e8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headings */
+h2 {
+    color: #957db5;
+    margin-bottom: 20px;
+}
+
+/* Links (Home page) */
+a {
+    text-decoration: none;
+    background-color: #957db5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #b3a400;
+}
+
+/* Form container */
+form {
+    background-color: white;
+    padding: 25px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Labels */
+label {
+    color: #957db5;
+    font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #957db5;
+    outline: none;
+}
+
+/* Radio buttons spacing */
+input[type="radio"] {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    background-color: #957db5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+input[type="submit"]:hover {
+    background-color: #b3a400;
+}
+
+/* Success message */
+.success {
+    color: #aecdb5;
+    margin-bottom: 10px;
+}
+
+/* Error message */
+.error {
+    color: #e36b5d;
+    margin-bottom: 10px;
+}

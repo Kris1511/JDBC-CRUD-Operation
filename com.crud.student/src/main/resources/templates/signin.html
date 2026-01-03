@@ -2,9 +2,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Login</title>
+<link rel = "stylesheet" href = "../static/css/style.css" />
 </head>
 <body>
+<div th:if = "${msg}" style = "color:green">
+			<h4 th:text = "${msg}"></h4>
+		</div>
 	<h2>Back To SignIn</h2>
 	<form action="signin" method = "post">
 		<label>Email:</label>
@@ -17,5 +21,9 @@
 		<br>
 		<input type = "submit" value = "Sign Up">
 	</form>
+	
+	<div th:if = "${errMsg}" style = "color:red">
+			<h4 th:text = "${errMsg}"></h4>
+		</div>
 </body>
 </html>

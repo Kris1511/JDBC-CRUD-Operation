@@ -17,8 +17,8 @@ public class StudentServiceImplements implements StudentService{
 		repo.save(st);
 	}
 	
-	public boolean usernameExits(String username) {
-		Student st = repo.findByUserName(username);
+	public boolean usernameExist(String username) {
+		Student st = repo.findByUsername(username);
 		
 		if (st != null) {
 			return true;
@@ -28,8 +28,8 @@ public class StudentServiceImplements implements StudentService{
 	}
 
 	@Override
-	public Student loginStudent(int id) {
-		return repo.findById(id).get();
+	public Student loginStudent(String email) {
+		return repo.findByEmail(email);
 	}
 
 }

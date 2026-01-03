@@ -6,8 +6,8 @@ public interface StudentService {
 	
 	void registerStudent(Student st);
 	
-	boolean usernameExits(String username);
+	boolean usernameExist(String username);
 	
-	Student loginStudent(int id);
+	Student loginStudent(String email);
 
 }
